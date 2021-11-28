@@ -215,7 +215,9 @@ apm install atom-beautify
 apm install atom-html-preview
 apm install Sublime-Style-Column-Selection
 apm install linter-eslint
-apm install livereload
+apm install atom-live-server-plus
+apm install open-in-browsers
+
 
 
 # code --install-extension Nash.awesome-flutter-snippets
