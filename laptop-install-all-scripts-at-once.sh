@@ -135,10 +135,10 @@ cd ubuntu-personal-bashrc && sudo cp -r .bashrc* ~/ && cd ../
 #cd random && sudo apt install ./4kvideodownloader*.deb -y --allow-downgrades && cd ../
 
 # Installing Google-Chrome Browser:
-#cd random && sudo apt install ./google-chrome-stable_current_amd64.deb -y --allow-downgrades && cd ../
+cd random && sudo apt install ./google-chrome-stable_current_amd64.deb -y --allow-downgrades && cd ../
 
 # Installing Visual Studio Code:
-cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
+#cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
 
 
 # Installing Atom:
