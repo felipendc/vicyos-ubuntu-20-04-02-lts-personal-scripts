@@ -20,6 +20,8 @@ sudo apt-get upgrade
 sudo apt-add-repository ppa:marin-m/songrec -y -u
 sudo apt-get update
 sudo apt install songrec -y
+sudo apt install thunar -y
+
 
 sudo apt install software-properties-common
 sudo apt install flatpak -y
