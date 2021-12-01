@@ -139,8 +139,17 @@ cd random && sudo apt install ./google-chrome-stable_current_amd64.deb -y --allo
 # Installing Visual Studio Code:
 cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
 
+
 # Installing Atom:
-cd random && sudo apt install ./atom-amd64*.deb -y --allow-downgrades && cd ../
+cd random
+rm -R atom-amd64*.deb
+zip -F atom-amd64.zip --out atom-amd64_unsplit.zip
+unzip atom-amd64_unsplit.zip
+rm -R atom-amd64_unsplit.zip
+sudo apt install ./atom-amd64*.deb -y --allow-downgrades
+rm -R atom-amd64*.deb
+ cd ../
+
 
 # Installing Photoscape with wine:
 #wine random/photoscape*.exe
