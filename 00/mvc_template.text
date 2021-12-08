@@ -1,0 +1,16 @@
+MCV é um padrão de linguagem de Design e segue as seguintes regras de estrutura:
+
+Model View Controller:
+
+MODEL: Lida com o DADO
+CONTROLLER: Lida com o (REQUESTS e ROUTING) (SOLICITAÇÕES e ROTAS).
+VIEW: Lida com a UI- User Interface / Interface do Usuário.
+
+O React é apenas o V de MVC
+
+
+Para aprender React, eu preciso entender as seguintas coisas sobre o JavaScript
+Tipos de dados, vareáveis, loops etc.
+Promises e programação assíncrona
+métodos de Arrays tipo: forEach() e map()
+Fetch API e fazer solicitações https 

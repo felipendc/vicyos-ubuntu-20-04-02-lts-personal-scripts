@@ -1,0 +1,242 @@
+# Essa documentação é baseada no meu conhecimental atual de programação.
+# Algum desses conhecimentos estão propensos à mudança ou atualização com o 
+# passar do tempo.
+
+
+
+A maioria das coisas na programação à objetos se resumem em:
+
+Obejeto:
+ Cada objeto tem seus próprios atributos.
+
+
+Oque são atributos? 
+ Atributos são os recursos específico que o obj nos fornece;
+ Coisas que são necessárias ou não necessárias para a criação da instância do obj;
+ 
+ RESUMINDO: SÃO TODAS AS COISAS QUE EU POSSO FAZER COM TAL OBJETO, OU COISAS QUE
+ ELE, TAL OBJETO, ME PERMITE FAZER ATRAVÉS DE:
+  
+  PROPRIEDADES;
+  MÉTODOS;
+  CALLBACKS; Uma função callback é uma função passada a outra função como argumento. (Listeners, events) etc.
+  
+
+Quais são os tipos dos atributos mais comum, e eles são tipados?
+ Temos: 
+   PROPRIEDADES: Elas são argumentos tipados que o usuários precisam passar como parâmetro.
+   existem vários tipos de propriedades, tais como: String, Int, float, Lista, ENUMs, funções,
+   ou até mesmo um objeto qualquer ou criado por você.
+   As propriedades, na realidades são vareáveis já setadas/criadas dentro de uma classe/objeto.
+   
+   Anatomia de uma propriedade: 
+   Objeto {
+   	final String nomeDoCarro;
+   	final Int anoDoCarro;
+   	final 
+   	entre outras propriedade...
+   }
+   
+   
+   MÉTODOS: Eles são uma função já cetadas/criadas dentro da clásse do objeto para executar um 
+   código ou fazer uma ação específica. Esses métodos podem tanto ser usádos em combinações com 
+   outros objetos, quanto pra modificar as próprias propriedades da classe/objeto e retornar algum
+   resultado.
+   EXEMPLO: EM BREVE!
+
+   
+   Também existem callbacks, que são funções que são passadas como argumentos de uma outra função,
+   um exemplo poderia ser um listener etc.
+
+
+Coisas Relacionadas com Classes? 
+   Estrutura da classe = Como ela montada;
+   
+   Encapsulamento = Realizado através de:
+	público (public) - o membro pode ser acessado por qualquer classe. Os membros públicos de uma classe definem sua interface;
+	protegido (protected) - o membro pode ser acessado apenas pela própria classe e suas sub-classes;
+	privado (private) - o membro pode ser acessado apenas pela própria classe/
+	      
+
+   Herança = A herança é um relacionamento pelo qual uma classe, chamada de sub-classe, herda todos comportamentos e estados possíveis 
+             de outra classe, chamada de super-classe ou classe base.
+   Polimorfismo = Na programação orientada a objetos, o polimorfismo permite que referências de tipos de classes mais abstratas 
+                  representem o comportamento das classes concretas que referenciam. 
+   
+   Associação = Uma associação é um vínculo que permite que objetos de uma ou mais classes se relacionem. Através destes vínculos 
+                é possível que um objeto convoque comportamentos e estados de outros objetos.
+                
+                As associações podem ser:
+			unárias - quando a associação ocorre entre objetos de uma mesma classe.
+			binárias - quando a associação ocorre entre dois objetos de classes distintas.
+			múltiplas - quando a associação ocorre entre mais de dois objetos de classes distintas.
+			Cada associação possui características de:
+
+			cardinalidade ou multiplicidade - determina quantos objetos no sistema são possíveis em cada vértice da associação.
+			navegação - se é possível para cada objeto acessar outro objeto da mesma associação.
+			
+			Cada pessoa tem um único pai (cardinalidade 1) e qualquer número de filhos (cardinalidade *). 
+			De acordo com a seta de navegação, só é possível navegar para o pai de cada pessoa. 
+			Desta forma cada objeto da classe Pessoa consegue acessar seu objeto pai, 
+			mas não consegue acessar seus objetos filhos.
+                
+                
+   Agregação = Uma associação é um vínculo que permite que objetos de uma ou mais classes se relacionem. Através destes vínculos 
+               é possível que um objeto convoque comportamentos e estados de outros objetos.
+               
+   Composição = Tipo de relacionamento com características todo-parte, onde existe um alto grau de coesão entre o todo e as partes, 
+                com total grau de dependência entre eles (todo e as partes). Desta forma, se o todo não existir, as partes também 
+                não existirão.
+                Um exemplo de composição é a mão:
+		Uma mão é composta por dedos. Os dedos compõem a mão.
+		Não há lógica em existir um dedo sem mão, porém pode-se ter uma mão sem um ou mais dedos
+   
+   Classes abstratas e concretas = Uma classe abstrata é desenvolvida para representar entidades e conceitos abstratos. 
+				   A classe abstrata é sempre uma superclasse que não possui instâncias. 
+				   Ela define um modelo (template) para uma funcionalidade e fornece uma implementação 
+				   incompleta - a parte genérica dessa funcionalidade - que é compartilhada por um grupo 
+				   de classes derivadas. Cada uma das classes derivadas completa a funcionalidade da classe 
+				   abstrata adicionando um comportamento específico.
+				   Uma classe abstrata normalmente possui métodos abstratos. Esses métodos são implementados 
+				   nas suas classes derivadas concretas com o objetivo de definir o comportamento específico. 
+				   O método abstrato define apenas a assinatura do método e, portanto, não contém código.
+
+				   Por outro lado, as classes concretas implementam todos os seus métodos e permitem a criação de instâncias. 
+				   Uma classe concreta não possui métodos abstratos e, geralmente, quando utilizadas neste contexto, 
+				   são classes derivadas de uma classe abstrata.
+
+
+   Quando eu crio uma classe e herdo algumas heranças da classe extendia, essa classe que eu criei pode ser chamada de: 
+   classe derivada ou subclasse.
+  
+   As classe que crio e que herda heranças, a classe que fornece as heranças para subclasse/classe derivada é chamada de
+   classe pai ou superclasse.
+   
+   
+   
+........................
+
+
+Oque são funções?
+   As funções são ótimas para reutilizar um pedaço de código várias vezes.
+
+Qual é a sintaxe de uma função?
+
+   Tipo_retorno nomeDaFuncao(Tipo argumento, Tipo argumento, ...){
+     corpoonde executa os códigos...
+     return (retorna algo baseado no tipo da função).
+   }
+   
+
+Quais são os tipos de retornos e parâmetros em a função?
+   Sem retorno e sem parâmetros;
+   Sem retorno e com parâmetros; 
+   Com retorno e sem parâmetros;
+   Com retorno e com parâmetros; 
+   Quando há parâmetros e retornos é preciso declarar quais são seus tipos.
+   
+   
+Oque são funções Assíncronas e Síncronas?
+    Funções Assíncronas: São usadas para quando eu quero que o meu código só continue a ser executado depois que uma função retornar
+                         algo. 
+                         Exemplo: Eu criei um programa que baixa um arquivo zipado e logo depois ele extrai os arquivos e logo depois 
+                         ele vai acessar as pastas do arquivo extraído e executar um arquivo build.sh
+                         Veja que: Primeiro o programa vai primeiro baixar o arquivo zip. Ele esperará o download terminar, a função async
+                         retornará que deu tudo certo. 
+                         Depois, ele vai acessar a pasta dos arquivos extraídos, e executará o arquivo build.sh, quando o arquivo
+                         build.sh terminar de ser executado, ele terminará o programa.
+
+    Funções Síncronas: São usadas quando eu quero que, mesmo quando uma função esteja esperando algum retorno, o resto do código continue
+                       sendo executado. 
+                       Exemplo: Eu criei um aplicativo pra baixar wallpapers, toda vez que eu acessar a página do pra baixar o wallpaper,
+                       a página será carregada enquanto o wallpaper está sendo carregada na tela. 
+                      
+    
+    
+Qual é a sintaxe das funções assíncronas?
+
+    Elas são usadas em momentos que precisamos esperar a resposta de um dado. 
+    Existem 3 partes de uma função assincrona:
+        Future = que retornará algum dado no futuro.
+        await = que esperará o resultado da função "Future" e só depois que o future responder, o esto do programa continuará.
+        async = Toda vez que dentro de uma função tiver algum dado com o await, é obrigatório setar/transformar a função em assincrona.
+        Se eu quiser continuar com a execução do código, mesmo que uma função não tenha retornado o resutado de um Future, é só eu 
+        não adicionar o async antes do corpo da função principal.
+        
+        
+        
+  
+Quais são os tipos das funções tipadas? 
+   O tipo de uma função é baseado de acordo com o tipo do argumento, obj retornado pela função.
+   Poderia ser String, Int, float, Lista, ENUMs, funções, void(que não retorna nada), etc.
+  
+  
+Oque são funções Anônimas e Arrow / Expressão Lambdas?  
+   Funções Anônima: É quando não damos um nome à elas. 
+   Ex: () {
+             print('Olá mundo.');
+          }
+          
+   Funções Arrow/Lambda: É quando eu quero tiver um único comando. 
+   Ex: ()=> print('Olá mundo.')
+   Não precisa do ; no final.
+   
+   
+   
+Oque são vareáveis e pra que elas são usadas? 
+  Elas são usadas pra instanciar um objeto, uma lista, um dicionário, números inteiros, floats, funções
+  Ela também são utilizadas para armazenar algum valor e dependendo do tipo da vareável, o valor
+  pode ser alterado.
+  Pra tipar uma vareável, é preciso saber primeiro qual tipo de valor ou objeto será armazenado nela. 
+  -- PONTO DE VISTA: 
+     As vareáveis é como se fossem um dicionário no Python, o nome da vareável representa a chave, e o que é instanciado ou
+     armazenado, é representado como a chave do dicionário, é como se, toda vez que ela fosse referenciada no código, ela retornasse
+     ou apontasse para o local onde o valor armazenado ou a instância de um objeto está armazenado na memória do computador.
+     
+     
+
+Tipos de Laços de repetição; Loops:
+   while: Enquanto ...blah, blah, blah.. 
+   do… while: Faça ...blah, blah, blah.. Enquanto ....
+   for: Para cada  ...blah, blah, blah.. 
+   foreach.: Paracada ...blah, blah, blah.. 
+   
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void main() { 
+      Map <String, double> tabelaDetaxas = {
+     'celta': 14.60,
+     'gol': 15.50,
+      }; 
+   
+
+  
+   print(tabelaDetaxas['gol']); 
+}
+
+
+
+
+revisar:
+https://www.javascripttutorial.net/javascript-object-properties/
+https://www.ti-enxame.com/pt/javascript/como-passar-uma-propriedade-de-objeto-como-um-parametro-javascript/1070445490/

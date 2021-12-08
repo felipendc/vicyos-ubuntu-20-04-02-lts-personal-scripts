@@ -233,12 +233,16 @@ alias refresh='source ~/.bashrc'
 
 # export ANDROID_AVD_HOME="$PATH:/home/felipe/.android/avd" 
 # export ANDROID_SDK_ROOT="$PATH:/home/felipe/Android/Sdk" 
-export PATH="$PATH:/home/felipe/flutter/bin"
-export PATH="$PATH:/home/felipe/node-v16.5.0-linux-x64/bin"
+export PATH="$PATH:/home/vicyos/flutter/bin"
+
+export NODE_OPTIONS=--openssl-legacy-provider
+export PATH="$PATH:/home/vicyos/node/bin"
+
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
 # export PATH="$PATH:/home/felipe/Android/Sdk/platform-tools"
 # export PATH="$PATH:/home/felipe/Android/Sdk/emulator"
 # export PATH="$PATH:/home/felipe/Android/Sdk/tools/bin"
+
 
 # # tqdm script
 # export PATH="$PATH:/home/felipe/.local/bin"

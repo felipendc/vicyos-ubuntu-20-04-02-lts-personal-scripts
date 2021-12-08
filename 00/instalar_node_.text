@@ -1,0 +1,11 @@
+Baixar o Node do website;
+
+export NODE_OPTIONS=--openssl-legacy-provider
+export PATH="$PATH:/home/vicyos/node/bin"
+
+npx create-react-app task-tracker
+npm install
+npm init
+npm update
+npm start
+
