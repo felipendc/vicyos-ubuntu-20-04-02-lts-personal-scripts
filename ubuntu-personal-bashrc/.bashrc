@@ -175,7 +175,7 @@ esac
 
 
 #################################################################
-################### felipe-PERSONAL-ALIAS  ######################
+################### vicyos-PERSONAL-ALIAS  ######################
 #################################################################
 
 
@@ -216,7 +216,7 @@ alias desligar-o-computador="shutdown now"
 
 
 
-############# felipe Personal ################
+############# vicyos Personal ################
 
 alias update='sudo apt-get update && sudo apt-get upgrade'
 alias revo='sudo apt autoremove'
@@ -231,21 +231,21 @@ alias unlock='sudo rm /var/lib/dpkg/lock-frontend && sudo rm /var/lib/dpkg/lock'
 alias fix='sudo dpkg --configure -a'
 alias refresh='source ~/.bashrc'
 
-# export ANDROID_AVD_HOME="$PATH:/home/felipe/.android/avd" 
-# export ANDROID_SDK_ROOT="$PATH:/home/felipe/Android/Sdk" 
+# export ANDROID_AVD_HOME="$PATH:/home/vicyos/.android/avd" 
+# export ANDROID_SDK_ROOT="$PATH:/home/vicyos/Android/Sdk" 
 export PATH="$PATH:/home/vicyos/flutter/bin"
 
-export NODE_OPTIONS=--openssl-legacy-provider
+#export NODE_OPTIONS=--openssl-legacy-provider
 export PATH="$PATH:/home/vicyos/node/bin"
 
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
-# export PATH="$PATH:/home/felipe/Android/Sdk/platform-tools"
-# export PATH="$PATH:/home/felipe/Android/Sdk/emulator"
-# export PATH="$PATH:/home/felipe/Android/Sdk/tools/bin"
+# export PATH="$PATH:/home/vicyos/Android/Sdk/platform-tools"
+# export PATH="$PATH:/home/vicyos/Android/Sdk/emulator"
+# export PATH="$PATH:/home/vicyos/Android/Sdk/tools/bin"
 
 
 # # tqdm script
-# export PATH="$PATH:/home/felipe/.local/bin"
+# export PATH="$PATH:/home/vicyos/.local/bin"
  
 
 

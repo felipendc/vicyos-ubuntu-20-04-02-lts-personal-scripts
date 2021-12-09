@@ -4,6 +4,11 @@
 
 # This script has been adapted to suit my needs (Vicyos / Felipe Ndc)
 
+# Install Python3 if it's not installed!
+if ! which python3 >/dev/null; then 
+    sudo apt install python3
+fi 
+
 # Manually installing FireDM with pip
 
 sudo apt install -y \
