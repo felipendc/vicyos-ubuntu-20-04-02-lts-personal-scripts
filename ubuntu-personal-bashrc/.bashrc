@@ -249,16 +249,14 @@ export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
  
 
 
-############ CCACHE to compile android custom roms! ############
+# Android building personal configs!
 
 # export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
-# export USE_CCACHE=1
-# export CCACHE_DIR="${HOME}/.ccache"
-# export CCACHE_EXEC="$(which ccache)"
-# ccache -M 150G
-
-# Install git-lfs
-#git lfs install
+git lfs install
+export USE_CCACHE=1
+export CCACHE_DIR="${HOME}/android_ccache"
+export CCACHE_EXEC="$(which ccache)"
+# ccache -M 120G  -- Run only once!
 #repo forall -c git lfs pull
 
 
